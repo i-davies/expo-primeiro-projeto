@@ -25,6 +25,8 @@ export default function Index() {
                 
                 <Card title="Buttons" body="Tipos de Botões" href={"/buttons"}></Card>
 
+                <Card title="Inputs" body="Campos de Entrada" href={"/inputs"}></Card>
+
             </View>
         </ScrollView>
     )
