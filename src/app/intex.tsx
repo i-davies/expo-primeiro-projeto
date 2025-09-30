@@ -23,7 +23,7 @@ export default function Index() {
                 }
                 }/> */}
                 
-                <Card title="Primeiro Card" body="Corpo do Card" href={"/buttons"}></Card>
+                <Card title="Buttons" body="Tipos de Botões" href={"/buttons"}></Card>
 
             </View>
         </ScrollView>

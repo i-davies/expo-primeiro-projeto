@@ -79,3 +79,39 @@ Após seguir todos os passos, sua estrutura de pastas deve se parecer com esta:
 ├── package.json
 └── tsconfig.json
 ```
+
+# Novas Etapas: Componentes de Botão
+
+Nesta seção, vamos criar uma nova tela para demonstrar diferentes tipos de botões e aprender a estilizá-los usando a API `StyleSheet`.
+
+## Objetivos
+
+- **Criar a rota:** Adicionar uma nova tela em `src/app/buttons.tsx`.
+- **Estilização com `StyleSheet`:** Substituir estilos *inline* por uma folha de estilos centralizada para melhor organização e performance.
+- **Implementar diferentes botões:** Explorar as funcionalidades e diferenças entre `Button`, `TouchableOpacity` e `Pressable`.
+
+## Passo a Passo
+
+1.  **Criar a nova rota**
+    - Adicione um novo arquivo no caminho `src/app/buttons.tsx`.
+
+2.  **Implementar `StyleSheet`**
+    - Em `buttons.tsx`, vamos importar o `StyleSheet` do `react-native`.
+    - Toda a estilização dos componentes desta tela será feita através de um objeto `StyleSheet` criado no final do arquivo.
+
+3.  **Criar os botões**
+    - Adicione um botão padrão do React Native:
+      - **`Button`**: Um componente simples e nativo, porém com poucas opções de customização visual.
+    - Adicione dois botões usando `TouchableOpacity`:
+      - **`TouchableOpacity` customizado**: Um botão que tem o efeito de opacidade ao ser pressionado.
+      - **Botão "Voltar"**: Um link de texto simples para voltar à tela anterior, também utilizando `TouchableOpacity`.
+    - Adicione um componente `Pressable`:
+      - **Estilização avançada**: Vamos aplicar múltiplos estilos ao `Pressable`:
+        - **Estilo Padrão**: Uma base de estilos aplicada a todos os estados.
+        - **Estilo Específico**: Um estilo adicional para customização.
+        - **Estilo Condicional**: Um estilo que muda dinamicamente quando o botão está sendo pressionado (`pressed`).
+      - **Eventos de interação**: Implemente os seguintes eventos no `Pressable`:
+        - `onPress`: Disparado com um clique simples.
+        - `onLongPress`: Disparado quando o botão é pressionado por um tempo determinado.
+        - `onPressOut`: Disparado quando o usuário solta o botão.
+        - `delayLongPress`: Define o tempo (em milissegundos) necessário para acionar o `onLongPress`.
