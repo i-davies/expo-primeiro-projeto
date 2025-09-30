@@ -25,6 +25,12 @@ export default function Index() {
                 
                 <Card title="Buttons" body="Tipos de Botões" href={"/buttons"}></Card>
 
+                <Card title="Flatlist" body="Exemplo de Flatlist" href={"/flatlist-example"}></Card>
+
+                <Card title="Flatlist fetch" body="Exemplo de Flatlist com fetch" href={"/flatlist-fetch"}></Card>
+
+                <Card title="Flashlist fetch" body="Exemplo de Flashlist com fetch" href={"/flashlist-fetch"}></Card>
+
             </View>
         </ScrollView>
     )
