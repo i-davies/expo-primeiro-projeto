@@ -31,6 +31,8 @@ export default function Index() {
 
                 <Card title="Flashlist fetch" body="Exemplo de Flashlist com fetch" href={"/flashlist-fetch"}></Card>
 
+                <Card title="Inputs" body="Campos de Entrada" href={"/inputs"}></Card>
+
             </View>
         </ScrollView>
     )
