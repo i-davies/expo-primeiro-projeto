@@ -1,7 +1,7 @@
-import { Image } from "expo-image"
-//import * as WebBrowser from 'expo-web-browser';
-import { Alert, Button, ScrollView, Text, View } from "react-native"
-import Card from "../components/Card"
+import { Image } from "expo-image";
+import * as WebBrowser from 'expo-web-browser';
+import { Alert, Button, ScrollView, Text, View } from "react-native";
+import Card from "../components/Card";
 
 export default function Index() {
     return (
@@ -16,12 +16,12 @@ export default function Index() {
                 <Button title="Clique aqui" color={"#1d1d1d"} 
                 onPress={ () => Alert.alert("Info", "Muito obrigado por clicar") } />
 
-                {/* <Button title='Github' color={"#1d1d1d"} onPress={(e) => {
+                <Button title='Github' color={"#1d1d1d"} onPress={(e) => {
                     e.preventDefault();
     
                     WebBrowser.openBrowserAsync("https://github.com/i-davies");
                 }
-                }/> */}
+                }/>
                 
                 <Card title="Buttons" body="Tipos de Botões" href={"/buttons"}></Card>
 
